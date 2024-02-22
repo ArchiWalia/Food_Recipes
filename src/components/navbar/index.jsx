@@ -20,27 +20,28 @@ export default function Navbar() {
           value={searchParam}
           onChange={(event) => setSearchParam(event.target.value)}
           placeholder="Enter Items..."
-          className="bg-white/75 p-3 px-8 rounded-full outline-none lg:w-96 shadow-lg shadow-red-100 focus:shadow-red-200"
-        />
+          className="bg-blue/75 p-3 px-8 rounded-full outline-none lg:w-96 shadow-lg shadow-red-100 focus:shadow-pink-200"
+          />
       </form>
       <ul className="flex gap-5">
-        <li>
-          <NavLink
-            to={"/"}
-            className="text-black hover:text-gray-700 duration-300"
-          >
-            Home
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to={"/favorites"}
-            className="text-black hover:text-gray-700 duration-300"
-          >
-            favorites
-          </NavLink>
-        </li>
-      </ul>
+  <li>
+    <NavLink
+      to={"/"}
+      className="text-orange-600 hover:text-orange-800 duration-300 font-semibold"
+    >
+      Home
+    </NavLink>
+  </li>
+  <li>
+    <NavLink
+      to={"/favorites"}
+      className="text-orange-600 hover:text-orange-800 duration-300 font-semibold"
+    >
+      Favorites
+    </NavLink>
+  </li>
+</ul>
+
     </nav>
   );
 }
